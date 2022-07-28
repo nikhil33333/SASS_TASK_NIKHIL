@@ -1,0 +1,37 @@
+@use 'media-queries';
+
+@mixin properties {
+    color: white;
+    font-family: proxima-nova, Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main_container{
+    .grid_elements{
+
+        .h11 {
+            @include properties;
+        }
+        
+        .pp {
+            @include properties;
+        }
+
+        .btn {
+            @include properties;
+            background-color: #80C795;
+            border-radius: 50px;
+            height: 40px;
+        
+        }
+        .btn_text {
+            margin: 20px;
+            color: white
+        }
+
+    }
+}
+

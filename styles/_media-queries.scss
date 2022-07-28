@@ -1,0 +1,47 @@
+$posi : fixed;
+$width1 : 639px;
+$width2 : 1199px;
+
+@media only screen and (min-width: $width2) {
+    .main_container {
+        margin: 30px;
+        border-top: 30px;
+        display: grid;
+        grid-template-columns: auto auto auto auto
+    }
+
+    .grid_elements:nth-of-type(1) {
+        position: fixed;
+        top: 7rem;
+    }
+
+    .grid_elements:nth-of-type(2) {
+        order: 1;
+        position: $posi;
+        top: 80px;
+        right: 30px;
+    }
+
+    .grid_elements:nth-of-type(3) {
+        position: $posi;
+        top: 15rem;
+    }
+
+    .grid_elements:nth-of-type(4) {
+        position: $posi;
+        bottom: 9rem;
+    }
+
+}
+
+@media only screen and (max-width: $width1) {
+    .main_container {
+        margin: 30px;
+        display: grid;
+        justify-items: center;
+    }
+
+    .pp {
+        text-align: center;
+    }
+}
