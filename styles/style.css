@@ -1,59 +1,96 @@
-@media only screen and (min-width: 1199px) {
-  .main_container {
-    margin: 30px;
-    border-top: 30px;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+@media screen and (max-width: 639px) {
+  .lc {
+    width: 100% !important;
   }
-  .grid_elements:nth-of-type(1) {
-    position: fixed;
-    top: 7rem;
+  .lc #lc2a {
+    display: none !important;
   }
-  .grid_elements:nth-of-type(2) {
-    order: 1;
-    position: fixed;
-    top: 80px;
-    right: 30px;
+  .rc {
+    width: 100% !important;
   }
-  .grid_elements:nth-of-type(3) {
-    position: fixed;
-    top: 15rem;
+  .rc .img2 img {
+    width: 100% !important;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
-  .grid_elements:nth-of-type(4) {
-    position: fixed;
-    bottom: 9rem;
+  #lc2b {
+    display: block !important;
   }
 }
-@media only screen and (max-width: 639px) {
-  .main_container {
-    margin: 30px;
-    display: grid;
-    justify-items: center;
+@media screen and (min-width: 640px) and (max-width: 1199px) {
+  .lc {
+    width: 100% !important;
   }
-  .pp {
-    text-align: center;
+  .lc .lc1 {
+    width: 100% !important;
+  }
+  .lc #lc2a {
+    display: none !important;
+  }
+  .rc {
+    width: 60% !important;
+  }
+  .rc .img2 {
+    width: 100% !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #lc2b {
+    display: block !important;
   }
 }
 body {
   background-color: black;
 }
 
-.main_container .grid_elements .h11 {
-  color: white;
-  font-family: proxima-nova, Arial, sans-serif;
+.mc {
+  width: 90%;
+  height: 70%;
+  margin: 8% auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.main_container .grid_elements .pp {
+.mc .lc2 .txt {
+  font-family: Arial, sans-serif;
   color: white;
-  font-family: proxima-nova, Arial, sans-serif;
 }
-.main_container .grid_elements .btn {
-  color: white;
-  font-family: proxima-nova, Arial, sans-serif;
+.mc .lc2 .btn {
   background-color: #80C795;
   border-radius: 50px;
   height: 40px;
-}
-.main_container .grid_elements .btn_text {
-  margin: 20px;
+  width: 200px;
+  margin: 0px;
   color: white;
+  font-size: 15px;
+}
+.mc .lc {
+  width: 50%;
+}
+.mc .lc .lc2 .txt {
+  font-family: Arial, sans-serif;
+  color: white;
+}
+.mc .lc .lc2 .btn {
+  background-color: #80C795;
+  border-radius: 50px;
+  height: 40px;
+  width: 200px;
+  margin: 0px;
+  color: white;
+  font-size: 15px;
+}
+.mc .lc #lc2a {
+  display: block;
+}
+.mc .rc {
+  width: 50%;
+}
+.mc .rc .img2 {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.mc #lc2b {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

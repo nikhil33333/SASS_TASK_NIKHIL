@@ -1,37 +1,75 @@
 @use 'media-queries';
 
 @mixin properties {
+    font-family: Arial, sans-serif;
+}
+
+@mixin lcprop {
+    background-color: #80C795;
+    border-radius: 50px;
+    height: 40px;
+    width: 200px;
+    margin: 0px;
     color: white;
-    font-family: proxima-nova, Arial, sans-serif;
+    font-size: 15px;
 }
 
 body {
     background-color: black;
 }
 
-.main_container{
-    .grid_elements{
+.mc {
+    width: 90%;
+    height: 70%;
+    margin: 8% auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-        .h11 {
+    .lc2 {
+        .txt {
             @include properties;
-        }
-        
-        .pp {
-            @include properties;
+            color: white;
         }
 
         .btn {
-            @include properties;
-            background-color: #80C795;
-            border-radius: 50px;
-            height: 40px;
-        
+            @include lcprop;
+
         }
-        .btn_text {
-            margin: 20px;
-            color: white
+    }
+
+    .lc {
+        width: 50%;
+
+        .lc2 {
+            .txt {
+                @include properties;
+                color: white;
+            }
+
+            .btn {
+                @include lcprop;
+
+            }
+        }
+
+        #lc2a {
+            display: block;
         }
 
     }
-}
 
+    .rc {
+        width: 50%;
+
+        .img2 {
+            width: 100%;
+        
+            object-fit: cover;
+        }
+    }
+
+    #lc2b {
+        display: none;
+    }
+}

@@ -1,48 +1,64 @@
-$posi : fixed;
-$width1 : 639px;
+$width : 639px;
+$width1 : 640px;
 $width2 : 1199px;
 
-@media only screen and (min-width: $width2) {
-    .main_container {
-        margin: 30px;
-        border-top: 30px;
-        display: grid;
-        grid-template-columns: auto auto auto auto
+@media screen and (max-width: $width) {
+
+    .lc {
+        width: 100% !important;
+
+        #lc2a {
+            display: none !important;
+        }
     }
 
-    .grid_elements:nth-of-type(1) {
-        position: fixed;
-        top: 7rem;
+    .rc {
+        width: 100% !important;
+
+        .img2 {
+            img {
+                width: 100% !important;
+                object-fit: cover;
+            }
+
+        }
+
     }
 
-    .grid_elements:nth-of-type(2) {
-        order: 1;
-        position: $posi;
-        top: 80px;
-        right: 30px;
-    }
-
-    .grid_elements:nth-of-type(3) {
-        position: $posi;
-        top: 15rem;
-    }
-
-    .grid_elements:nth-of-type(4) {
-        position: $posi;
-        bottom: 9rem;
+    #lc2b {
+        display: block !important;
     }
 
 }
 
-@media only screen and (max-width: $width1) {
-    .main_container {
-        margin: 30px;
-        display: grid;
-        justify-items: center;
+@media screen and (min-width: $width1) and (max-width: $width2) {
+    .lc {
+
+        width: 100% !important;
+        .lc1{
+            width: 100% !important;
+        }
+
+        #lc2a {
+            display: none !important;
+        }
     }
 
-    .pp {
-        text-align: center;
+    .rc {
+        width: 60% !important;
+
+    
+            .img2 {
+                width: 100% !important;
+                object-fit: cover;
+            }
+
+        
+
+    }
+
+    #lc2b {
+        display: block !important;
     }
 
 }
