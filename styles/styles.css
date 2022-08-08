@@ -35,14 +35,12 @@ section {
 }
 .container .content .left_container .readGartner {
   border-radius: 40px;
-  background-color: #58D68D;
+  background-color: #66ca90;
   color: #fff;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px 30px;
-}
-.container .content .left_container .readGartner span {
   font-weight: 600;
 }
 .container .content .right_container {
@@ -62,6 +60,7 @@ section {
   }
   .container .content .left_container {
     text-align: center;
+    align-items: center;
     width: 100%;
   }
   .container .content .left_container .cyberfortify1 {
@@ -78,15 +77,15 @@ section {
   }
   .container .content .left_container .readGartner {
     border-radius: 40px;
-    background-color: #58D68D;
+    background-color: #66ca90;
     color: #fff;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     padding: 10px 30px;
-  }
-  .container .content .left_container .readGartner span {
     font-weight: 600;
+    text-align: center;
+    margin: auto;
   }
   .container .content .right_container {
     display: none;
@@ -116,14 +115,12 @@ section {
   }
   .container .content .left_container .readGartner {
     border-radius: 40px;
-    background-color: #58D68D;
+    background-color: #66ca90;
     color: #fff;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     padding: 10px 30px;
-  }
-  .container .content .left_container .readGartner span {
     font-weight: 600;
   }
   .container .content .right_container {
@@ -154,15 +151,14 @@ section {
   }
   .container .content .left_container .readGartner {
     border-radius: 40px;
-    background-color: #58D68D;
+    background-color: #66ca90;
     color: #fff;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     padding: 10px 30px;
-  }
-  .container .content .left_container .readGartner span {
     font-weight: 600;
+    margin-top: 20px;
   }
   .container .content .right_container {
     width: 50%;
